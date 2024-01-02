@@ -37,7 +37,7 @@ function ListRecipes({ recipes, changeRecipes }) {
         };
 
         try {
-            await fetch('http://localhost:8081/v1/recipes/removeRecipe', opts)
+            await fetch('https://recipe-app-backend-production-692a.up.railway.app/v1/recipes/removeRecipe', opts)
             alert("Successfully removed recipe")
             changeRecipes(recipes.filter(function (ind) {
                 return ind.transactionId !== id
