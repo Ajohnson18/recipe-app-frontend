@@ -1,7 +1,7 @@
 export function calculateGroceryList(recipes) {
     let allIngredients = {}
-    recipes.foreach(({ ingredients }) => {
-        ingredients.foreach(({ ingredient, quantity, quantityType }) => {
+    recipes.forEach(({ ingredients }) => {
+        ingredients.forEach(({ ingredient, quantity, quantityType }) => {
             let key = [ingredient, quantityType].join(',')
             if (key in allIngredients) {
                 allIngredients[key] = (parseFloat(quantity) + parseFloat(allIngredients[key])).toFixed(1)
