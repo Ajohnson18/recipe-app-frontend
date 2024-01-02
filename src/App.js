@@ -29,7 +29,7 @@ function App() {
       };
 
       try {
-        const response = await fetch('http://localhost:8081/v1/recipes/getAll', opts)
+        const response = await fetch('https://recipe-app-backend-production-692a.up.railway.app/v1/recipes/getAll', opts)
         const data = await response.json()
         console.log(data)
         setRecipes(data)
