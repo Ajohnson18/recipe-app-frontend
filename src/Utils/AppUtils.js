@@ -15,7 +15,7 @@ export function calculateGroceryList(recipes) {
     let refinedIngredients = []
 
     for (const [key, value] of Object.entries(allIngredients)) {
-        ingredientType = key.substring(key.indexOf(',') + 1)
+        let ingredientType = key.substring(key.indexOf(',') + 1)
         refinedIngredients.push(
             {
                 ingredient: camelize(key.substring(0, key.indexOf(','))),
