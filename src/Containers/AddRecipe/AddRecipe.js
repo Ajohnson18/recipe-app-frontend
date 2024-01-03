@@ -137,6 +137,7 @@ function AddRecipe({ changePage, updateRecipes, currentRecipes }) {
                         <td>
                             <Form.Select aria-label="Choose Quantity Type" onChange={handleQuantityType}>
                                 <option>Choose a quantity type</option>
+                                <option value="na">n/a</option>
                                 <option value="Cups">Cups</option>
                                 <option value="Teaspoons">Teaspoons</option>
                                 <option value="Tablespoons">Tablespoons</option>
